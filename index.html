@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rectangle with Edges and Midpoints</title>
+  </head>
+  <body>
+
+    <div id="player1" class="player-indicator active">Player 1</div>
+    <div id="player2" class="player-indicator">Player 2</div>
+    <p id="turn"></p>
+    <div class="inner-box">
+      <div
+        class="circle top-left"
+        id="circle1"
+        value=""
+        data-value=""
+        onclick="handleAddClick(1, event)"
+      ></div>
+      <!-- <input
+  class="circle top-left"
+  type="button"
+  id="circle1"
+  onclick="handleAddClick(1,1, event)"
+/> -->
+
+      <div
+        class="circle top-right"
+        id="circle3"
+        value=""
+        data-value=""
+        onclick="handleAddClick(3, event)"
+      ></div>
+      <div
+        class="circle bottom-left"
+        id="circle22"
+        value=""
+        data-value=""
+        onclick="handleAddClick(22, event)"
+      ></div>
+      <div
+        class="circle bottom-right"
+        id="circle24"
+        value=""
+        data-value=""
+        onclick="handleAddClick(24, event)"
+      ></div>
+      <div
+        class="circle middle-top"
+        id="circle2"
+        value=""
+        data-value=""
+        onclick="handleAddClick(2, event)"
+      ></div>
+      <div
+        class="circle middle-bottom"
+        id="circle23"
+        value=""
+        data-value=""
+        onclick="handleAddClick(23, event)"
+      ></div>
+      <div
+        class="circle middle-left"
+        id="circle10"
+        value=""
+        data-value=""
+        onclick="handleAddClick(10, event)"
+      ></div>
+      <div
+        class="circle middle-right"
+        id="circle15"
+        value=""
+        data-value=""
+        onclick="handleAddClick(15, event)"
+      ></div>
+      <div class="line top1"></div>
+      <div class="line bottom1"></div>
+      <div class="line left1"></div>
+      <div class="line right1"></div>
+
+      <!-- <div class="line top"></div>
+      <div class="line bottom"></div>
+      <div class="line left"></div>
+      <div class="line right"></div> -->
+      <div class="small-box">
+        <div
+          class="circle top-left"
+          id="circle4"
+          value=""
+          data-value=""
+          onclick="handleAddClick(4, event)"
+        ></div>
+        <div
+          class="circle top-right"
+          id="circle6"
+          value=""
+          data-value=""
+          onclick="handleAddClick( 6, event)"
+        ></div>
+        <div
+          class="circle bottom-left"
+          id="circle19"
+          value=""
+          data-value=""
+          onclick="handleAddClick(19, event)"
+        ></div>
+        <div
+          class="circle bottom-right"
+          id="circle21"
+          value=""
+          data-value=""
+          onclick="handleAddClick(21, event)"
+        ></div>
+        <div
+          class="circle middle-top"
+          id="circle5"
+          value=""
+          data-value=""
+          onclick="handleAddClick(5, event)"
+        ></div>
+        <div
+          class="circle middle-bottom"
+          id="circle20"
+          value=""
+          data-value=""
+          onclick="handleAddClick(20, event)"
+        ></div>
+        <div
+          class="circle middle-left"
+          id="circle11"
+          value=""
+          data-value=""
+          onclick="handleAddClick(11, event)"
+        ></div>
+        <div
+          class="circle middle-right"
+          id="circle14"
+          value=""
+          data-value=""
+          onclick="handleAddClick(14, event)"
+        ></div>
+        <div class="line top"></div>
+        <div class="line bottom"></div>
+        <div class="line left2"></div>
+        <div class="line right2"></div>
+
+        <div class="small-box1">
+          <div
+            class="circle top-left"
+            id="circle7"
+            value=""
+            data-value=""
+            onclick="handleAddClick(7, event)"
+          ></div>
+          <div
+            class="circle top-right"
+            id="circle9"
+            value=""
+            data-value=""
+            onclick="handleAddClick(9, event)"
+          ></div>
+          <div
+            class="circle bottom-left"
+            id="circle16"
+            value=""
+            data-value=""
+            onclick="handleAddClick(16, event)"
+          ></div>
+          <div
+            class="circle bottom-right"
+            id="circle18"
+            value=""
+            data-value=""
+            onclick="handleAddClick(18, event)"
+          ></div>
+          <div
+            class="circle middle-top"
+            id="circle8"
+            value=""
+            data-value=""
+            onclick="handleAddClick(8, event)"
+          ></div>
+          <div
+            class="circle middle-bottom"
+            id="circle17"
+            value=""
+            data-value=""
+            onclick="handleAddClick(17, event)"
+          ></div>
+          <div
+            class="circle middle-left"
+            id="circle12"
+            value=""
+            data-value=""
+            onclick="handleAddClick(12, event)"
+          ></div>
+          <div
+            class="circle middle-right"
+            id="circle13"
+            value=""
+            data-value=""
+            onclick="handleAddClick(13, event)"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <p class="player-moves">Player 1 Moves: <span id="player1Moves">9</span></p>
+    <p class="player-moves">Player 2 Moves: <span id="player2Moves">9</span></p> 
+  </body>
+  <script src="script.js"></script>
+</html>

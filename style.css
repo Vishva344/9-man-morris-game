@@ -1,0 +1,207 @@
+ .board div {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    box-sizing: border-box;
+  } 
+  /* body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  } */
+
+  .main {
+    align-self: center;
+  }
+  .small-box1 {
+    border: 4px solid rgb(105, 207, 46);
+    padding: 20px;
+    width: 10pc;
+    height: 10pc;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-20%, -20%);
+    margin: 30px;
+  }
+
+  .small-box {
+    border: 4px solid blue;
+    padding: 20px;
+    width: 20pc;
+    height: 20pc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: 30px; */
+  }
+
+  .inner-box {
+    border: 4px solid red;
+    padding: 20px;
+    width: 30pc;
+    height: 30pc;
+    margin: auto;
+    position: relative;
+    
+  }
+
+  .circle {
+    position: absolute;
+    background-color: #ffff;
+    border: 3px solid black;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .circle.top-left {
+    top: -5px;
+    left: -5px;
+  }
+  .circle.top-right {
+    top: -5px;
+    right: -5px;
+  }
+  .circle.bottom-left {
+    bottom: -5px;
+    left: -5px;
+  }
+  .circle.bottom-right {
+    bottom: -5px;
+    right: -5px;
+  }
+  .circle.middle-top {
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .circle.middle-bottom {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .circle.middle-left {
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+  }
+  .circle.middle-right {
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+  }
+  .line {
+    position: absolute;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+  }
+  .line.top {
+    left: 50%;
+    top: 13%;
+    width: 60px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .line.bottom {
+    bottom: 47px;
+    left: 50%;
+    width: 60px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .line.top1 {
+    left: 50%;
+    top: 13%;
+    width: 100px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .line.bottom1 {
+    bottom: 47px;
+    left: 50%;
+    width: 55px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .line.left {
+    top: 50%;
+    height: 100px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .line.left1 {
+    left: 9%;
+    width: 60px;
+    transform: translateX(-50%) rotate(0deg);
+    top: 50%;
+  }
+  .line.right {
+    top: 50%;
+    right: -2px;
+    height: 100px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .line.right1 {
+    top: 50%;
+    width: 60px;
+    transform: translateY(-50%) rotate(0deg);
+    right: 4%;
+  }
+  .line.left2 {
+    left: 14%;
+    width: 60px;
+    transform: translateX(-50%) rotate(0deg);
+    top: 50%;
+  }
+  .line.right2 {
+    top: 50%;
+    width: 60px;
+    transform: translateY(-50%) rotate(0deg);
+    right: 5%;
+  }
+  .player-indicator {
+     display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    text-align: center;
+    
+    
+  } 
+  
+  .active {
+    background-color: blue;
+    
+  }
+  .circle.possible:hover {
+    background-color: lightblue;
+  }
+  .circle.hover {
+    cursor: pointer;
+    border-color: #999;
+  }
+  .player-moves {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .player-moves span {
+    font-weight: bold;
+    color: blue;
+    
+  }
+  #player1Moves,
+#player2Moves {
+  margin: 10px;
+  
+}
